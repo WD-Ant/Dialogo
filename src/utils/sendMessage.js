@@ -5,7 +5,7 @@ const sendMessage = () => {
     const messageWrapper = document.querySelector(".message-wrapper");
 
     // Declaring and initializing API information
-    const apiKey = import.meta.env.VITE_API_KEY; // Adjust to your environment variable
+    const apiKey = import.meta.env.VITE_API_KEY; // Hidden API Key for security purposes
     const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`;
 
     // Function to handle sending messages
