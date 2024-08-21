@@ -10,4 +10,4 @@ Dialogo is an AI-chatbot powered by Google's Gemeni API.
 
 ## Preview
 
-Want to test out Dialogo for yourself? Click here: 
+Want to test out Dialogo for yourself? Click here: https://dialogo-cb.vercel.app/
