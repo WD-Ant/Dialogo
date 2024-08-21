@@ -4,8 +4,10 @@
     --background: #03021a;
     --white: #FFFFFF;
     --black: #242424;
+    --light-gray: hsl(0, 0%, 80%);
     --primary-font: "Noto Sans", sans-serif;
     --btn-hover: #cfcaca;
+    --preloader: #27245e;
 }
 
 * {

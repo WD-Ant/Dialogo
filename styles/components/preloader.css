@@ -1,0 +1,43 @@
+body.loader-active {
+    overflow: hidden;
+  }
+  
+  .loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    transition: opacity 0.5s, visibility 1s;
+  }
+  
+  .fade {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    z-index: 9998;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--light-gray);
+    border-top-color: var(--preloader);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    
+    to {
+      transform: rotate(1turn);
+    }
+  }
