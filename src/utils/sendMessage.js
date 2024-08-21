@@ -11,6 +11,7 @@ const sendMessage = () => {
     // Function to handle sending messages
     const functionality = () => {
         if (messageBar.value.trim().length > 0) {
+            
             // Display the user's message
             const userMessage = `
                 <div class="user-response entity">
@@ -77,9 +78,10 @@ const sendMessage = () => {
         }
     };
 
-    // Attach event listeners
+    // Button click functionality
     sendBtn.addEventListener('click', functionality);
 
+    // Enter key functionality
     messageBar.addEventListener('keydown', (e) => {
         if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();
